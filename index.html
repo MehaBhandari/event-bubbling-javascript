@@ -7,37 +7,66 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src='./index.js'></script>
-    </head>
-    <body>
-        <!-- <div style="border: 5px solid black; padding: 50px;">
-            <div style="border: 5px solid green ; padding: 50px;">
-                <div class='row' style="border: 5px solid red ; padding: 50px;">
-                    <div class= col>
-                        <img src="https://cdn.britannica.com/09/162509-131-9D36AD0E/Ice-cubes-background.jpg" width="300px" height="200px"/>
+        
+        <link rel='stylesheet'  href='./index.css'>
+    </head>    
+    <body class="mainDiv">
+        <div>
+            <!-- <div style="border: 5px solid black; padding: 50px;">
+                <div style="border: 5px solid green ; padding: 50px;">
+                    <div class='row' style="border: 5px solid red ; padding: 50px;">
+                        <div class= col>
+                            <img src="https://cdn.britannica.com/09/162509-131-9D36AD0E/Ice-cubes-background.jpg" width="300px" height="200px"/>
+                        </div>
+                        <div class= col>
+                            <span>This is right text...</span>
+                            <p>This is general info...</p>
+                        </div>
+                        
                     </div>
-                    <div class= col>
-                        <span>This is right text...</span>
-                        <p>This is general info...</p>
-                    </div>
-                    
                 </div>
-            </div>
-        </div> -->
-        <div style="border: 5px solid black; padding: 50px;">
-            <div style="border: 5px solid green ; padding: 50px;" data-name="grandparent" onclick="grandparentDivClicked()">
-                <div style="border: 5px solid red ; padding: 50px;" data-name="parentDiv" onclick="parentDivClicked()">
-                    <div style="display: inline-block; width: 600px; align-items: center" data-name="childDiv" onclick="childDivClicked()">
-                        <img src="https://cdn.britannica.com/09/162509-131-9D36AD0E/Ice-cubes-background.jpg" onclick="imgClicked()" width="400px" height="200px"/>
+            </div> -->
+            <div class="div1">
+                <div class="grandparentDiv" data-name="grandparent" onclick="grandparentDivClicked()">
+                    <div class="parentDiv" data-name="parentDiv" onclick="parentDivClicked()">
+                        <div class="childDiv" data-name="childDiv" onclick="childDivClicked()">
+                            <img src="https://cdn.britannica.com/09/162509-131-9D36AD0E/Ice-cubes-background.jpg" onclick="imgClicked()" width="400px" height="200px"/>
+                        </div>
+                        <div style="display: inline-block">
+                            <span>This is right text...</span>
+                            <p>This is general info...</p>
+                            <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" onclick="anchorTagClicked(event,this)"> Click here to redirect to Bootstrap4...</a>                        
+                        </div>                    
                     </div>
-                    <div style="display: inline-block">
-                        <span>This is right text...</span>
-                        <p>This is general info...</p>
-                        <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" onclick="anchorTagClicked(event,this)"> Click here to redirect to Bootstrap4...</a>                        
-                    </div>
-                    
                 </div>
+            </div> <br><br>            
+            <!-- Event Delegation -->
+            <div class="div2">
+                <script src='./index.js'></script>
+                <table id="empTable">
+                    <tr>
+                        <th>Sr No.</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Meha</td>
+                        <td>Developer</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mayank</td>
+                        <td>Senior Developer</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kabir</td>
+                        <td>HR</td>
+                    </tr>
+                </table>
             </div>
         </div>
+        
     </body>
 </html>

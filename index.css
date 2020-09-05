@@ -1,0 +1,23 @@
+table tr td, table tr th {
+    border: 2px solid blue
+}
+.mainDiv {
+    margin-left: 10px;
+}
+.div1 {
+    border: 5px solid black; 
+    padding: 50px;
+}
+.grandparentDiv {
+    border: 5px solid green ; 
+    padding: 50px;
+}
+.parentDiv {
+    border: 5px solid red ; 
+    padding: 50px;
+}
+.childDiv {
+    display: inline-block; 
+    width: 600px; 
+    align-items: center
+}

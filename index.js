@@ -20,5 +20,10 @@ $(document).ready(function(){
         alert('jQuery Invoked');
     }).on('click', ()=>{
         alert('Hii');
-    })
+    });    
+})
+$('.div2').on('click', 'tr', (event)=>{
+    event.target;
+    debugger;
+    alert('Clicked tr');
 })
